@@ -11,6 +11,12 @@ body {
   background-image: radial-gradient(circle at center bottom, #e9b64b, #c76075 15%, #0d0d4b 75%, #190e14 90%);
 }
 
+h1{
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+}
+
 div#beach,
 canvas#canvas {
   position: absolute;
@@ -439,6 +445,51 @@ div#sea {
   top: 60px;
   right: 25px;
 }
+
+.moon1 {
+  position: absolute;
+  top: 10%;
+  right: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: inset 20px -10px 0 0 #b9b9b9;
+}
+
+.moon1 .crater1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #bbb;
+  box-shadow: inset -3px 1.5px 0 0 #aaa;
+  top: 20px;
+  right: 20px;
+}
+
+.moon1 .crater2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #bbb;
+  box-shadow: inset -1px 0.5px 0 0 #aaa;
+  top: 45px;
+  right: 50px;
+}
+
+.moon1 .crater3 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #bbb;
+  box-shadow: inset -1.5px 0.75px 0 0 #aaa;
+  top: 60px;
+  right: 25px;
+}
+
 .btn{
   display: inline-block;
   background: rgb(68, 148, 194);
@@ -484,5 +535,9 @@ div#sea {
   .moon {
     right: 230px;
   }
+  .moon1 {
+    left: 230px;
+  }
+  
 }
 
