@@ -63,97 +63,99 @@
         </div>
         
         <a href="ulik.html" class="btn">Click Here &#8594</a>
+        <a href="todolist.html" class="btn">Todo List &#8594</a>
+
 
         <!-- Header -->
-<div class="header" id="myHeader">
-    <h1>You and Me</h1>
-    <p>Pilih aja</p>
-    <button class="btn" onclick="one()">1</button>
-    <button class="btn active" onclick="two()">2</button>
-    <button class="btn" onclick="four()">4</button>
-  </div>
+        <div class="header" id="myHeader">
+            <h1>You and Me</h1>
+            <p>Pilih aja</p>
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn active" onclick="two()">2</button>
+            <button class="btn" onclick="four()">4</button>
+        </div>
   
-  <!-- Photo Grid -->
-  <div class="row"> 
-    <div class="column">
-      <img src="src/poto1.png" style="width:100%">
-      <img src="src/poto2.png" style="width:100%">
-      <img src="src/poto8.jpg" style="width:100%">
-      <img src="src/poto20.jpg" style="width:100%">
-      <img src="src/poto16.jpg" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="src/poto3.jpg" style="width:100%">
-      <img src="src/poto6.jpg" style="width:100%">
-      <img src="src/poto8.jpg" style="width:100%">
-      <img src="src/poto13.jpg" style="width:100%">
-      <img src="src/poto14.jpg" style="width:100%">
-      <img src='src/poto17.jpg'.jpg" style="width:100%">
-    </div>  
-    <div class="column">
-      <img src="src/poto4.jpg" style="width:100%">
-      <img src="src/poto7.jpg" style="width:100%">
-      <img src="src/poto9.jpg" style="width:100%">
-      <img src="src/poto11.jpg" style="width:100%">
-      <img src="src/poto15.jpg" style="width:100%">
-      <img src="src/poto21.jpg" style="width:100%">
-    </div>
-    <div class="column">
-      <img src="src/poto5.jpg" style="width:100%">
-      <img src="src/poto10.png" style="width:100%">
-      <img src="src/poto19.jpg" style="width:100%">
-      <img src="src/poto12.jpg" style="width:100%">
-      <img src="src/poto18.jpg" style="width:100%">
-    </div>
-  </div>
-  
-  <script>
-  // Get the elements with class="column"
-  var elements = document.getElementsByClassName("column");
-  
-  // Declare a loop variable
-  var i;
-  
-  // Full-width images
-  function one() {
-      for (i = 0; i < elements.length; i++) {
-      elements[i].style.msFlex = "100%";  // IE10
-      elements[i].style.flex = "100%";
-    }
-  }
-  
-  // Two images side by side
-  function two() {
-    for (i = 0; i < elements.length; i++) {
-      elements[i].style.msFlex = "50%";  // IE10
-      elements[i].style.flex = "50%";
-    }
-  }
-  
-  // Four images side by side
-  function four() {
-    for (i = 0; i < elements.length; i++) {
-      elements[i].style.msFlex = "25%";  // IE10
-      elements[i].style.flex = "25%";
-    }
-  }
-  
-  // Add active class to the current button (highlight it)
-  var header = document.getElementById("myHeader");
-  var btns = header.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-  </script>
-    
+        <!-- Photo Grid -->
+        <div class="row"> 
+          <div class="column">
+            <img src="src/poto1.png" style="width:100%">
+            <img src="src/poto2.png" style="width:100%">
+            <img src="src/poto8.jpg" style="width:100%">
+            <img src="src/poto20.jpg" style="width:100%">
+            <img src="src/poto16.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="src/poto3.jpg" style="width:100%">
+            <img src="src/poto6.jpg" style="width:100%">
+            <img src="src/poto8.jpg" style="width:100%">
+            <img src="src/poto13.jpg" style="width:100%">
+            <img src="src/poto14.jpg" style="width:100%">
+            <img src='src/poto17.jpg'.jpg" style="width:100%">
+          </div>  
+          <div class="column">
+            <img src="src/poto4.jpg" style="width:100%">
+            <img src="src/poto7.jpg" style="width:100%">
+            <img src="src/poto9.jpg" style="width:100%">
+            <img src="src/poto11.jpg" style="width:100%">
+            <img src="src/poto15.jpg" style="width:100%">
+            <img src="src/poto21.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="src/poto5.jpg" style="width:100%">
+            <img src="src/poto10.png" style="width:100%">
+            <img src="src/poto19.jpg" style="width:100%">
+            <img src="src/poto12.jpg" style="width:100%">
+            <img src="src/poto18.jpg" style="width:100%">
+          </div>
+        </div>
         
+        <script>
+        // Get the elements with class="column"
+        var elements = document.getElementsByClassName("column");
         
+        // Declare a loop variable
+        var i;
         
-        <script src="js/index.js"></script>
+        // Full-width images
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "100%";  // IE10
+            elements[i].style.flex = "100%";
+          }
+        }
         
+        // Two images side by side
+        function two() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "50%";  // IE10
+            elements[i].style.flex = "50%";
+          }
+        }
+        
+        // Four images side by side
+        function four() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "25%";  // IE10
+            elements[i].style.flex = "25%";
+          }
+        }
+        
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeader");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+          
+              
+              
+              
+              <script src="js/index.js"></script>
+              
     </body>
 </html>
